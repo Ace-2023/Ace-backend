@@ -1,0 +1,40 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": "standard-with-typescript",
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+  "rules": {
+    "quotes": [2, "double", { "avoidEscape": true }],
+    "@typescript-eslint/quotes": [2, "double", { "avoidEscape": true }],
+    "semi": [2, "always"],
+    "@typescript-eslint/semi": [2, "always"],
+    "comma-dangle": ["error", "only-multiline"],
+    "@typescript-eslint/comma-dangle": ["error", "only-multiline"],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never"
+      }
+    ],
+    "@typescript-eslint/space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never"
+      }
+    ],
+    "multiline-ternary": "off",
+    "@typescript-eslint/multiline-ternary": "off",
+    "indent": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off"
+  }
+}
